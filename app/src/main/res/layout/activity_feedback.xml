@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aman.sw.Feedback">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="FEEDBACK"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/editfeedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editfeedback"
+        android:layout_width="282dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Write your feedback here...."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="15dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/btnReport_a_bug"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editfeedback" />
+
+    <Button
+        android:id="@+id/btnReport_a_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="71dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="11dp"
+        android:text="Report a Bug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+</android.support.constraint.ConstraintLayout>
